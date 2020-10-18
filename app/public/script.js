@@ -77,7 +77,6 @@ function appendNewQuestion(question, timestamp) {
   setVideoTime(convertTimeToSeconds());
 }
 
-// Go to timestamp in video, and show thread
 function answerQuestion(id){
   event.preventDefault();
   console.log("answerQuestion id: " + id);
@@ -86,7 +85,6 @@ function answerQuestion(id){
   
 }
 
-// fetch the initial list of dreams
 fetch("/questions")
   .then(response => response.json()) // parse the JSON from the server
   .then(questions => {
